@@ -33,39 +33,57 @@
 <body>
   <div id="wrap">
     <div class="container">
-      <section class="intro">
+      <section id="intro">
         <p class="head-emoji">🎹 🎷 🥁 🎤 🎺 🎵</p>
         <h2>재즈가 뭐라고 생각하세요?</h2>
         <h1>째즈 테스트</h1>
         <p class="test-ex">
           상대방과의 호흡? 화합?<br/>
-          아니. 재즈란 말이죠...<br/>
+          <span class="italic">아니. 재즈란 말이죠...</span><br/>
           당신의 재즈란 무엇인가요?<br/> 당신에게 어울리는 재즈곡은 무엇일까요?<br/>
-          재즈라는 장르는 많이 들어봤지만 그다지 친하게 지내지 못했던 당신에게,<br/>
+          재즈라는 장르는 많이 들어봤지만<br/>그다지 친하게 지내지 못했던 당신에게,<br/>
           혹은 나름 재즈 좀 들어봤다는 당신에게!<br/>
           어울릴만한! 취향 저격당할! 재즈곡을 추천해드릴게요!<br/>
           이렇게 재즈 한 번 잡숴보시렵니까?<br/>
-          <span>당신이 지나가면 이런 향기가 들려요🎵</span>
+          <span class="highlight">당신이 지나가면 이런 향기가 들려요🎵</span>
         </p>
         <p class="louis">
-          "만일 당신이 재즈가 무엇이냐고 물어야 한다면, 당신은 재즈를 영원히 이해할 수 없을 것입니다."
+          "만일 당신이 재즈가 무엇이냐고 물어야 한다면,<br/> 당신은 재즈를 영원히 이해할 수 없을 것입니다."
           <span>- 루이 암스트롱</span>
         </p>
         <p class="warning-text">
           ‼ 이 테스트는 재즈에 일가견이 없는 일개 공대생이 만들었습니다.<br/>
           ‼ 많은 분들이 재즈에 관심 가지길 바라며 보컬 재즈곡으로 구성하였습니다.
         </p>
+        <button onclick="begin()">테스트 하러 가기</button>
         <p class="head-emoji">🎹 🎷 🥁 🎤 🎺 🎵</p>
-
+      
       </section>
 
-      <main class="qna">
-
-      </main>
+      <section id="qna">
+        <div class="progress">
+          <span class="progress-icon">🥁</span>
+        </div>
+        <div class="question-area">
+          <h3 class="question"></h3>
+          <div class="answer-area">
+            
+          </div>
+        </div>
+        <p class="head-emoji">🎹 🎷 🥁 🎤 🎺 🎵</p>
+      </section>
 
     </div>
 
+    <footer>
+      <address>Made by github@asy047</address>
+      <a href="https://asy047.tistory.com" terget="_blank">만든사람 블로그</a>
+    </footer>
+
     
   </div>
+  <script src="js/script.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
 </body>
 </html>
