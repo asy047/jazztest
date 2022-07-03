@@ -9,19 +9,21 @@ const progressIcons = [
 function goNext(qIndex) {
   // progress bar
   var progressWidth = 'calc(100% / 7) *' + qIndex;
-  document.documentElement.style.setProperty('--progress-width', progressWidth);
+  if(qIndex < 8)
+    document.documentElement.style.setProperty('--progress-width', progressWidth);
   // progress icon
   var progressIcon = document.querySelector('.progress-icon');
-  progressIcon.innerHTML = progressIcons[qIndex];
+  if(qIndex < 7)
+    progressIcon.innerHTML = progressIcons[qIndex];
   // question 만들기
   var question = document.querySelector(".question");
   question.innerHTML = qnaList[qIndex].q;
   for(let i in qnaList[qIndex].a) {
-    addAnswer(qnaList[qIndex].a[i].answer, qIndex);
+    addAnswer(qnaList[qIndex].a[i].answer, qIndex, i);
   }
 }
 
-function addAnswer(aString, qIndex) {
+function addAnswer(aString, qIndex, idx) {
   // answer 만들기
   var answerArea = document.querySelector(".answer-area");
   var answer = document.createElement("button");
@@ -36,10 +38,17 @@ function addAnswer(aString, qIndex) {
       children[i].disabled = true;
       children[i].style.display = "none";
     }
-    if (qIndex >= 7) { 
-    } else {
-      goNext(++qIndex);
-    }
+    var target = qnaList[qIndex].a[idx].type;
+    setTimeout(() => {
+      for(let i = 0; i < target.length; i++) {
+        selectCnt[target[i]] += 1;
+        console.log(selectCnt);
+      }
+    }, 450);
+
+    if(qIndex === endPoint)
+      moveResult();
+    goNext(++qIndex);
   } ,false)
 }
 
@@ -53,16 +62,16 @@ function begin() {
 }
 
 const endPoint = 7;
-const selectCnt = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
+const selectCnt = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
 
 function calResult() { //결과 최대값 선별해서 반환
-  console.log(select);
+  console.log(selectCnt);
   var result = selectCnt.indexOf(Math.max(...selectCnt));
   return result;
 }
 
 function moveResult() {
   let point = calResult();
-  location.href = 'result-page' + point;
+  location.href = 'result-page' + point +'.html';
   
 }

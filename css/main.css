@@ -10,6 +10,9 @@ body {font: 500 1.5rem Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
 .italic {font-style: italic;}
 .highlight {background: rgba(255, 255, 0, 0.5);}
 .head-emoji {margin: 1em 0;}
+p {line-height: 2em;}
+h2 {font-size: 1.8rem;}
+h1 {font-size: 3.5rem; font-weight: 600; margin-bottom: .3em;}
 
 /* container */
 .container {
@@ -23,9 +26,6 @@ body {font: 500 1.5rem Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
 }
 /* intro */
 #intro {transition: opacity .5s;}
-#intro p {line-height: 2em;}
-#intro h2 {font-size: 1.8rem;}
-#intro h1 {font-size: 3.5rem; font-weight: 600; margin-bottom: .3em;}
 #intro .louis {
   margin-top: 1em;
   font-size: 1.3rem;
@@ -87,7 +87,6 @@ button:focus, button:active, button:hover{ color: #fff; background: #445239 ;}
 .question {margin-bottom: 1.5em;}
 #qna .head-emoji {margin: 2em 0 0 0;}
 #qna button {display: block; width: 100%; }
-
 
 /* footer */
 footer {margin-bottom: 1em; text-align: center; color: rgba(34, 34, 34, 0.5); font-size: 1.2rem;}

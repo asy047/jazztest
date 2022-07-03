@@ -75,10 +75,3 @@ const qnaList = [
     ]
   }
 ]
-
-const result = [
-  {
-    name: '가을이 불어오는',
-    desc: '가득 쌓여있는 낙엽 향기가 나요.'
-  }
-]
