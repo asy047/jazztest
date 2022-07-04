@@ -43,6 +43,7 @@ p.result-desc {
   text-align: left;
 }
 a {
+  cursor: pointer;
   display: inline-block;
 }
 a.btnplay, a.metoo{
