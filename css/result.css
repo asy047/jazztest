@@ -34,6 +34,7 @@ figure span:nth-child(2) {
   background: rgba(255, 255, 255, 0.5);
 }
 figure img {
+  display: inline-block;
   width: 100%;
   border-radius: 50%;
   overflow: hidden;
