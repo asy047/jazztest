@@ -35,6 +35,8 @@ figure span:nth-child(2) {
 }
 figure img {
   width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
   animation: turn 15s linear infinite;
 }
 @keyframes turn {
