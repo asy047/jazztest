@@ -10,7 +10,7 @@ function kakaoShare() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: '째즈 테스트 결과',
+      title: '째즈 테스트 결과!',
       description: shareDes,
       imageUrl:
         resultImg,
