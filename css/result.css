@@ -2,3 +2,70 @@
 
 h1.result {font-size: 3rem; font-weight: 600; margin-bottom: 0;}
 .artist {display: block; margin-bottom: 1em; font-size: 1.5rem;}
+figure {
+  position: relative;
+  margin: 2em auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px #222;
+}
+figure span{
+  content: '▶';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.8rem;
+  color: black;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 100;
+}
+figure img {
+  width: 100%;
+  animation: turn 15s linear infinite;
+}
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p.result-desc {
+  text-align: left;
+}
+a.btnplay {
+  display: inline-block;
+  /* margin-top: 1em; */
+  padding: 1em 2em;
+  background: #c4302b;
+  color: #fff;
+  border-radius: 1em;
+}
+p.louis {
+  margin-bottom: 1em;
+}
+.share-area {
+  margin-top: 1em;
+}
+.share-area a {
+  display: inline-block;
+  width: 35px; height: 35px;
+  text-align: center;
+}
+.linkcopy {
+  margin-right: 1em;
+  background: #eee;
+  border-radius: 3px;
+}
+.linkcopy img {
+  width: 100%;
+}

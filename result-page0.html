@@ -24,19 +24,46 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/result.css">
+
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    Kakao.init('a4b211a7176ebf8adc463c528ee83702');
+    Kakao.isInitialized();
+  </script>
 </head>
 <body>
   <div id="wrap">
     <div class="container">
       <p class="head-emoji">🎹 🎷 🥁 🎤 🎺 🎵</p>
-      <h2>나는 너무 쉽게 사랑에 빠져</h2>
+      <h2>나는 너무 쉽게 사랑에 빠져😥</h2>
       <h1 class="result">I fall in love too easily</h1>
       <span class="artist">- Chat Baker</span>
-      <p>
-        당신... 혹시 금사빠가 아니신가요?<br/>
-        금사빠가 아니라도, 여리고 섬세한 당신은 이런 노래가 어울릴 것 같아요!<br/>
-        
+      <figure>
+        <span>▶</span>
+        <img src="img/result01.jpg" alt="챗 베이커의 I fall in love too easily">
+      </figure>
+      <p class="louis">
+        내 마음은 좀 더 배워야해.<br/>
+        과거에는 늘 실패로 끝나버렸으니.
       </p>
+      <p class="result-desc">
+        - 혹시... 금사빠가 아니신가요?<br/>
+        - 사람에게 정을 잘 주고 상처도 많이 받는 당신.<br/>
+        - 남들과는 다른 여리고 섬세한 감성을 갖고 있어요!<br/>
+        - 새벽이 깊어지면 그 누구보다 슬퍼지는...<br/>
+      </p>
+      <p style="margin-top: 1em;">
+        당신에게는 이런 노래가 어울릴 것 같아요!<br/>
+      </p>
+      <a class="btnplay" href="https://youtu.be/3zrSoHgAAWo">들으러가기</a>
+      <div class="share-area">
+        <a onclick="linkcopy()" class="linkcopy">
+          <img src="img/link-icon.png" alt="링크 복사하기">
+        </a>
+        <a onclick="js:kakaoShare()">
+          <img src="img/kakaotalk_sharing_btn_small_ov.png" alt="카카오톡 공유하기">
+        </a>
+      </div>
       <p class="head-emoji">🎹 🎷 🥁 🎤 🎺 🎵</p>
     </div>
     <footer>
@@ -44,5 +71,6 @@
       <a href="https://asy047.tistory.com" terget="_blank">만든사람 블로그</a>
     </footer>
   </div>
+  <script src="js/share.js"></script>
 </body>
 </html>

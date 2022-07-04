@@ -26,7 +26,7 @@ h1 {font-size: 3.5rem; font-weight: 600; margin-bottom: .3em;}
 }
 /* intro */
 #intro {transition: opacity .5s;}
-#intro .louis {
+.louis {
   margin-top: 1em;
   font-size: 1.3rem;
   font-family: 'Nanum Myeongjo', serif;
