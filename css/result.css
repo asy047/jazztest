@@ -33,6 +33,7 @@ figure span:nth-child(2) {
   background: rgba(255, 255, 255, 0.5);
 }
 figure img {
+  transform: scale(1.2);
   width: 100%;
   animation: turn 15s linear infinite;
 }
