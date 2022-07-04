@@ -3,7 +3,6 @@ function kakaoShare() {
   var resultImg = document.querySelector("figure img").src;
   var resultAlt = document.querySelector("figure img").alt;
   console.log(resultAlt, resultImg);
-  const shareTitle = '째즈 테스트 결과';
   const shareDes = resultAlt;
   const shareImage = resultImg;
   const shareURL = window.document.location.href;
@@ -11,10 +10,10 @@ function kakaoShare() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: shareTitle,
+      title: '째즈 테스트 결과',
       description: shareDes,
       imageUrl:
-        shareImage,
+        resultImg,
       link: {
         mobileWebUrl: shareURL,
         webUrl: shareURL
