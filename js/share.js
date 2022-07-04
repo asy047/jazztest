@@ -1,8 +1,8 @@
 
 function kakaoShare() {
-  var resultImg = document.querySelector("figure img");
+  var resultImg = document.querySelector("figure img").src;
   var resultAlt = resultImg.alt;
-  console.log(resultAlt);
+  console.log(resultAlt, resultImg);
   const shareTitle = '째즈 테스트 결과';
   const shareDes = resultAlt;
   const shareImage = resultImg;
